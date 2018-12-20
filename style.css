@@ -11,3 +11,9 @@ div.content {
   margin: auto;
 }
 
+/* Portrait mobile phones and small-sized browser windows */
+@media screen and (max-device-width: 640px) and (orientation: portrait), screen and (max-width: 640px) {
+  div.content {
+    width: 100%;
+  }
+}
