@@ -1,0 +1,153 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+   "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" >
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Khilan Gudka</title>
+<link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="container">
+    <div id="core_header"></div>
+    <div id="core_container">
+        <div id="core_container2">
+            <div id="core_right">				
+				<div id="content-header" align="center">
+				    <table width="90%">
+						<tr>
+							<td>
+								<img src="photo.jpg"/>
+							</td>
+							<td>
+		                    	<h2>Khilan Gudka</h2>
+								<p id="address">
+									Office 558C, Huxley Building,<br/>
+									Department of Computing,<br/>
+									Imperial College London,<br/>
+									180 Queen's Gate,<br/>
+									London SW7 2AZ, UK<br/>
+								</p>
+								<p id="email">
+									Email: <i>firstname</i>@doc.ic.ac.uk
+								</p>
+							</td>
+						</tr>
+					</table>
+				</div>
+                <div class="content-box">
+					<p>
+						<b>*** I am now a Research Associate at the <a href="http://www.cam.ac.uk">University of Cambridge</a> <a href="http://www.cl.cam.ac.uk">Computer Laboratory</a>. You can find my new homepage <a href="http://www.cl.cam.ac.uk/~kg365/">here</a>. ***</b>
+                    </p>
+					<p>
+						<b>*** I have recently completed my PhD, entitled "Lock Inference for Java." You can find my thesis <a href="http://pubs.doc.ic.ac.uk/khilan-thesis/">here</a>. ***</b>
+					</p>
+					<h3>Biography</h3>
+                    <p>
+                        I am a final year PhD student supervised by 
+                        <a href="http://www.doc.ic.ac.uk/~susan/">Professor Susan Eisenbach</a> and 
+                        <a href="http://www.doc.ic.ac.uk/~scd/">Professor Sophia Drossopoulou</a> of 
+                        the <a href="http://slurp.doc.ic.ac.uk">SLURP</a> group 
+                        at the <a href="http://www.doc.ic.ac.uk">Department of Computing</a>, 
+                        <a href="http://www.ic.ac.uk">Imperial College London</a>.
+					</p>
+					<p>
+						My research is generously funded by <a href="http://research.microsoft.com/en-us/labs/Cambridge/">Microsoft Research Cambridge</a>
+						as part of their PhD Scholarship programme. My sponsor 
+						at Microsoft is <a href="http://timharris.co.uk">Tim Harris</a>.
+					</p>
+					<p>
+                        Prior to this, I completed a four-year undergraduate 
+                        MEng Computing degree also at
+                        the department. During my final year, I had the fortune 
+						of working with <a href="http://spark.woaf.net">David Cunningham</a>
+						on atomicity for concurrent programs.
+					</p>
+                </div>
+                <div class="content-box">
+                    <h3>Research</h3>
+					<p>
+						Atomicity provides strong guarantees against errors caused 
+						by unanticipated thread interactions, but is difficult for programmers to 
+						implement directly with low-level concurrency primitives. This has led to 
+						research on automated techniques for providing atomicity, such as using 
+						transactional memory (TM). However, this approach has the limitation 
+						of not being able to support system calls (without serialising all
+						atomic sections).
+					</p>
+					<p>
+						Lock inference is another technique, which statically infers locks 
+						sufficient to ensure atomicity without causing deadlock. One possibility 
+						is to acquire a global lock before executing each atomic section, 
+						ensuring they execute in mutual exclusion. However, this cripples 
+                    	concurrency as non-interfering atomic sections cannot execute in 
+						parallel.
+					</p>
+					<p>
+						My research looks at inferring fine-grained locks to allow
+						as much concurrency as possible, while balancing the overheads
+						of lock acquisition and deadlock prevention. I am also interested
+						in a hybrid implementation of transactional memory with lock 
+						inference.
+					</p>
+                    <p>Relevant areas:</p>
+                    <ul>
+                        <li>Lock inference</li>
+                        <li>Transactional memory</li>
+                        <li>Program analysis</li>
+                        <li>Parallel programming models</li>
+                        <li>Parallel architectures</li>
+                    </ul>
+                </div>
+                <div class="content-box">
+                    <h3>Publications</h3>
+                    <ul class="pubslist">
+			<li>
+				<a href="http://pubs.doc.ic.ac.uk/khilan-thesis/"><b>Lock Inference for Java</b></a><br/>
+				Khilan Gudka<br/>
+				<i>PhD Thesis, Imperial College London, December 2012</i>
+			</li>
+			<li>
+				<a href="http://pubs.doc.ic.ac.uk/lock-inference-large-libraries/"><b>Lock Inference in the Presence of Large Libraries</b></a> (<a href="ecoop2012-slides.pdf">Slides</a>)<br/>
+                 Khilan Gudka, Tim Harris, Susan Eisenbach<br/>
+                <i>ECOOP 2012</i>
+			</li>
+			<li>
+				<a href="http://pubs.doc.ic.ac.uk/fast-multi-level-locks/"><b>Fast Multi-Level Locks for Java: A Preliminary Performance Evaluation</b></a> (<a href="ec2-multilocks-slides.pdf">Slides</a>)<br/>
+				Khilan Gudka, Susan Eisenbach<br/>
+				<i>EC<sup>2</sup> 2010: Workshop on Exploiting Concurrency Efficiently and Correctly</i>
+			</li>
+			<li>
+				<a href="http://pubs.doc.ic.ac.uk/lock-inference-for-atomicity/"><b>Keep Off The Grass: Locking the Right Path for Atomicity</b></a> (<a href="cc08-slides.pdf">Slides</a>)<br/>
+				David Cunningham, Khilan Gudka, Susan Eisenbach<br/>
+				<i>Compiler Construction 2008</i>
+			</li>
+                    </ul>
+                </div>
+                <div class="content-box">
+                    <h3>Posters</h3>
+                    <ul class="pubslist">
+                        <li>
+				<a href="posters/msrsummer09.pdf"><b>Improving the Performance of Atomic Sections</b></a><br/>
+				<i>Microsoft Research Cambridge Summer School 2009</i> 
+                        </li>
+                    </ul>
+                </div>
+                <div class="content-box">
+                    <h3>Reports</h3>
+                    <ul class="pubslist">
+                 		<li>
+                  			<a href="unpublished/transfer.pdf"><b>Improving the Performance of Atomic Sections</b></a> (<a href="unpublished/transfer-slides.pdf">Slides</a>)<br/>
+                      		<i>PhD Transfer Report, September 2009</i>
+                  		</li>
+                     	<li>
+							<a href="unpublished/finalreport.pdf"><b>Implementing Atomic Sections Using Lock Inference</b></a> (<a href="unpublished/outsourcingreport.pdf">Outsourcing</a>) (<a href="http://www3.imperial.ac.uk/computing/teaching/ug/ug-distinguished-projects/2007">Distinguished Project</a>)<br/>
+							<i>MEng Final Year Project, June 2007</i>
+						</li>
+					</ul>
+                </div>
+            </div>    
+        </div>    
+    </div>
+</div>
+</body>
+</html>

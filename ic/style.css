@@ -1,0 +1,134 @@
+html, body {
+height: 100%;
+padding:0px;
+margin:0px;
+}
+body {
+background: url('images/tile.jpg');;
+padding:0px;
+margin:0px;
+}
+a, a:link {
+text-decoration: underline;
+color:blue;
+}
+a:hover {
+text-decoration: none;
+color:blue;
+}
+a:active {
+text-decoration: underline;
+color:blue;
+}
+#container {
+width: 696px;
+height: auto !important;
+margin-left: auto;
+margin-right: auto;
+margin-top: 0px;
+margin-bottom:0px;
+}
+#core_header {
+margin:0px;
+padding:0px;
+}
+img
+{
+ margin:5px;
+}
+#core_container2
+{
+width: 696px;
+height:auto;
+position: relative;
+margin:0px;
+padding:0px;
+background-color: #FFF;
+}
+#core_left {
+margin: 0;
+float: none;
+width: 696px;
+background-color: #FFF;
+}
+#core_right {
+margin: 0 0 10px 0;
+float: right;
+width: 696px;
+min-height:250px;
+color:#000;
+background: #ffffff;
+}
+.content-box
+{
+ float:left;
+ width: 666px;
+ font-family: arial, 'sans-serif';
+ font-size: 14px;
+ color:#000;
+ margin-top: 0px;
+ margin-bottom: 10px;
+ margin-left: 15px;
+}
+h2
+{
+text-align: left;
+font-family: arial, sans-serif;
+font-size: 30px;
+margin-bottom: 10px;
+margin-top: 10px;
+}
+h3
+{
+font-family: "Verdana", Lucida Handwriting, sans-serif;
+padding:0px;
+font-size: 16px;
+color:#8C8C8C;
+border-bottom: 1px ridge #000;
+margin-bottom:8px;
+margin-top: 0px;
+}
+h3:first-letter {
+font-size: 18px;
+font-family: Verdana;
+color: #000;
+}
+h4
+{
+text-align: center;
+font-family: arial, sans-serif;
+font-weight: normal;
+font-size:14px;
+margin-top: 0px;
+margin-bottom: 10px;
+}
+p
+{
+margin-top: 0;
+margin-bottom: 10px;
+}
+ul
+{
+margin-bottom: 10px;
+margin-top: 0;
+}
+#updated
+{
+font-family: arial, sans-serif;
+font-size:12px;
+}
+#address
+{
+	text-align: left;
+	font-family: arial, sans-serif;
+	font-weight: normal;
+}
+#email
+{
+	text-align: left;
+	font-family: arial, sans-serif;
+	font-weight: normal;
+}
+.pubslist li {
+	margin-top: 10px;
+}

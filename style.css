@@ -1,0 +1,13 @@
+body, p, ol, ul, td {
+  font: 18px/1.4 Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
+}
+
+img {
+  margin-left: 20px;
+}
+
+div.content {
+  width: 75%;
+  margin: auto;
+}
+
