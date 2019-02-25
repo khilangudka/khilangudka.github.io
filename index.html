@@ -9,69 +9,23 @@
 	<div id="content">
 		<img id="headshot" src="images/headshot.jpg" alt="Headshot" />
 		<h1>Khilan Gudka</h1>
+    <p>
+          I am a Security Software Engineer at <a href="https://www.gresearch.co.uk">G-Research</a>.
+    </p>
 		<p>
-			    I am a Research Associate in the <a href="http://www.cl.cam.ac.uk/research/security/">Security Group</a> at the <a href="http://www.cl.cam.ac.uk">University of Cambridge Computer Laboratory</a> supervised by <a href="http://www.cl.cam.ac.uk/~rnw24/">Dr. Robert N. M. Watson</a>.
+			    Previously, I was a Research Associate in the <a href="http://www.cl.cam.ac.uk/research/security/">Security Group</a> at the <a href="http://www.cl.cam.ac.uk">University of Cambridge Computer Laboratory</a> supervised by <a href="http://www.cl.cam.ac.uk/~rnw24/">Dr. Robert N. M. Watson</a>. During this time, I led work on the <a href="http://www.cl.cam.ac.uk/research/security/ctsrd/soaap/">SOAAP</a> project, which explored semi-automated techniques, grounded in static analysis, dynamic analysis, and program transformation, to improve the developer experience when compartmentalising applications. Moreover, it aimed to provide better understanding of the security, performance and complexity tradeoffs of different compartmentalisation strategies. I also led work investigating the use of <a href="http://www.cl.cam.ac.uk/research/security/ctsrd/cheri/">CHERI</a> to protect C++ applications, such as web browsers.
      </p>
      <p>
-        Prior to this, I completed my PhD at the <a href="http://www.doc.ic.ac.uk">Department of Computing</a>, <a href="http://www.ic.ac.uk">Imperial College London</a> supervised by <a href="http://www.doc.ic.ac.uk/~susan/">Professor Susan Eisenbach</a> and <a href="http://www.doc.ic.ac.uk/~scd/">Professor Sophia Drossopoulou</a>. My research was generously funded by <a href="https://www.microsoft.com/en-us/research/lab/microsoft-research-cambridge/">Microsoft Research Cambridge</a> as part of their PhD Scholarship programme. My mentor at Microsoft was <a href="https://timharris.uk/">Dr. Tim Harris</a>.
+        Prior to this, I completed my PhD at the <a href="http://www.doc.ic.ac.uk">Department of Computing</a>, <a href="http://www.ic.ac.uk">Imperial College London</a> supervised by <a href="http://www.doc.ic.ac.uk/~susan/">Professor Susan Eisenbach</a> and <a href="http://www.doc.ic.ac.uk/~scd/">Professor Sophia Drossopoulou</a>. My thesis explored the technique of lock inference for implementing atomic sections. This technique infers a set of locks for each atomic section, while attempting to balance the requirements of maximal concurrency, minimal locking overhead and freedom from deadlock. I focused on lock-inference techniques for tackling large Java programs making use of mature libraries. My research was generously funded by <a href="https://www.microsoft.com/en-us/research/lab/microsoft-research-cambridge/">Microsoft Research Cambridge</a> as part of their PhD Scholarship programme. My mentor at Microsoft was <a href="https://timharris.uk/">Dr. Tim Harris</a>.
 		</p>
     <p>
-      <i>Email:</i> [firstname].[lastname]@cl.cam.ac.uk<br/>
+      <i>Email:</i> [firstname].[lastname]@outlook.com<br/>
       <i>Profiles:</i> <a href="https://scholar.google.co.uk/citations?user=5VDa2poAAAAJ">Google Scholar</a>, <a href="https://www.linkedin.com/in/khilangudka">LinkedIn</a>
     </p>
 		<h2>Research interests</h2>
     <p>
       Security, Program Analysis, Compilers, Concurrency
 		</p>
-		<h2>Projects</h2>
-    <h3><a href="http://www.cl.cam.ac.uk/research/security/ctsrd/cheri/">Capability Hardware Enhanced RISC Instructions (CHERI)</a></h3>
-    <p>
-    CHERI is a hardware-software interface research project seeking to revise
-    ISA design in order to provide fine-grained memory protection and better
-    support for software compartmentalisation within process address spaces.
-    Through commodity software stacks, such as FreeBSD, LLVM, and the Chromium
-    web browser, we validate our hybrid design, applying capability-based
-    compartmentalisation selectively to support both our most trusted (OS
-    kernel, low-level language runtimes), and least trustworthy (web browsers
-    and servers) software components. I am currently researching into using
-    CHERI to protect C++ applications, such as web browsers, mail readers,
-    database engines and office suites.
-    </p>
-		<h3><a href="http://www.cl.cam.ac.uk/research/security/ctsrd/soaap/">Security-Oriented Analysis of Application Programs (SOAAP)</a></h3>
-		<p>
-    Sandboxing technologies such as Capsicum and CHERI support the fine-grained
-    compartmentalisation of large-scale applications such as web browsers and
-    office suites, as well as multiple-component software such as the UNIX
-    userspace. When deployed correctly, application compartmentalisation offers
-    significant benefits by allowing policies to be imposed within
-    applications, and in mitigating exploited (and yet-to-be-discovered)
-    vulnerabilities. However, application compartmentalisation remains an art
-    rather than a science: identifying, implementing, and debugging
-    partitioning strategies requires detailed expertise in both the application
-    and security. Part of this problem is the semantic gap between security
-    policies that programmers understand and intend to implement, and the
-    mechanisms and abstractions provided by the underlying platform, such as
-    the OS. SOAAP is exploring semi-automated techniques, grounded in static
-    analysis, dynamic analysis, and automated program transformation, to
-    improve the developer experience and help better understand the security,
-    performance and complexity tradeoffs with compartmentalisation.
-		</p>
-    <h3><a href="http://www.cl.cam.ac.uk/research/security/ctsrd/tesla/">Temporally Enhanced Security Logic Assertions (TESLA)</a></h3>
-    <p>
-    TESLA builds on our experiences developing the TrustedBSD MAC Framework
-    and Capsicum: our most critical security properties are frequently safety
-    (temporal) properties rather than static invariants.
-    Current tools for testing temporal properties are largely static, and unable
-    to work effectively on extremely large C-language software bases, such as
-    multi-million lines-of-code operating system kernels and web browsers.
-    TESLA borrows ideas from model checking, applying them in a dynamic context
-    using compiler-assisted instrumentation to continuously validate temporal
-    security assertions during software execution.
-    We have implemented a prototype of TESLA based on clang/LLVM AST transforms,
-    which is able to test both explicit automata against C implementations (such
-    as protocol state machines in the kernel and OpenSSL) and inline assertions
-    checking for missing access control checks in OS logic.
-    </p>
 
 		<h2>Publications</h2>
     <div id="pubs">
